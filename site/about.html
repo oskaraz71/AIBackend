@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apie mus - Paw Haven</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #16a34a;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header, footer, main {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: var(--box-shadow);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            color: var(--primary);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .team-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-card {
+            width: 250px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #eee;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin-bottom: 10px;
+            }
+
+            .team-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/site/index.html">Pagrindinis</a></li>
+                <li><a href="/site/about.html">Apie mus</a></li>
+                <li><a href="/site/contact.html">Kontaktai</a></li>
+                <li><a href="/site/terms.html">Taisyklės</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Apie Paw Haven</h1>
+            <p>Sužinokite daugiau apie mūsų misiją gelbėti ir rūpintis gyvūnais.</p>
+        </section>
+
+        <section id="mission">
+            <h2>Mūsų Misija</h2>
+            <p>Mūsų misija yra suteikti saugų ir mylintį prieglobstį beglobiams gyvūnams, užtikrinti jiems reikiamą priežiūrą ir pagalbą bei rasti jiems amžinus namus. Mes tikime, kad kiekvienas gyvūnas nusipelno meilės ir galimybės gyventi laimingą gyvenimą.</p>
+        </section>
+
+        <section id="story">
+            <h2>Mūsų Istorija</h2>
+            <p>Paw Haven buvo įkurtas 2010 metais, kai grupė gyvūnų mylėtojų susivienijo, siekdami pagerinti beglobių gyvūnų gyvenimus. Pradėjome kaip maža savanorių grupė, bet su laiku išaugome į pilnai veikiantį gyvūnų prieglaudą. Per šiuos metus padėjome tūkstančiams gyvūnų rasti naujus namus ir suteikėme jiems geresnį gyvenimą.</p>
+        </section>
+
+        <section id="values">
+            <h2>Mūsų Vertybės</h2>
+            <ul>
+                <li><strong>Užjauta:</strong> Mes rūpinamės kiekvienu gyvūnu, nepriklausomai nuo jo amžiaus ar sveikatos būklės.</li>
+                <li><strong>Atsakomybė:</strong> Mes esame įsipareigoję užtikrinti geriausią priežiūrą mūsų globojamiems gyvūnams.</li>
+                <li><strong>Skaidrumas:</strong> Mes siekiame būti atviri ir sąžiningi su savo rėmėjais ir bendruomene.</li>
+                <li><strong>Bendradarbiavimas:</strong> Mes tikime, kad bendradarbiaujant su kitomis organizacijomis ir asmenimis galime pasiekti daugiau.</li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>Mūsų Komanda</h2>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="John Doe">
+                    <h3>Jonas Jonaitis</h3>
+                    <p>Prieglaudos direktorius</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Jane Smith">
+                    <h3>Janė Smitienė</h3>
+                    <p>Veterinarė</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/100" alt="Peter Jones">
+                    <h3>Petras Petraitis</h3>
+                    <p>Gyvūnų globėjas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Paw Haven
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Haven - Gyvūnų prieglauda</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #16a34a;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --light-gray: #e5e7eb;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header, footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 400px;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature {
+            padding: 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .testimonial {
+            padding: 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .faq {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            padding: 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Paw Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="/site/index.html">Pagrindinis</a></li>
+                <li><a href="/site/about.html">Apie mus</a></li>
+                <li><a href="/site/contact.html">Kontaktai</a></li>
+                <li><a href="/site/terms.html">Taisyklės</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Raskite savo naują geriausią draugą!</h2>
+            <p>Atidarykite savo namus meilei ir draugystei. Priglauskite gyvūną iš Paw Haven ir pakeiskite jo gyvenimą – bei savo!</p>
+            <a href="#" class="btn">Priglausk dabar</a>
+            <img src="https://placehold.co/600x400" alt="Šuniuko iliustracija">
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Meilė be sąlygų</h3>
+                <p>Gyvūnai suteikia meilės ir draugystės, kurios nepakeis niekas kitas.</p>
+            </div>
+            <div class="feature">
+                <h3>Naujas šeimos narys</h3>
+                <p>Priimkite į savo šeimą naują narį ir kurkite gražius prisiminimus kartu.</p>
+            </div>
+            <div class="feature">
+                <h3>Pakeiskite gyvenimą</h3>
+                <p>Priglaudę gyvūną, jūs ne tik suteikiate jam namus, bet ir pakeičiate jo gyvenimą.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <p>"Aš esu be galo dėkinga Paw Haven už mano puikų šunį, Max! Jis suteikia tiek džiaugsmo mano gyvenime."</p>
+                <p>- Elena</p>
+            </div>
+            <div class="testimonial">
+                <p>"Paw Haven padarė prieglaudos procesą lengvą ir malonų. Labai rekomenduoju!"</p>
+                <p>- Jonas</p>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Dažniausiai užduodami klausimai</h2>
+            <div class="faq-item">
+                <h3>Kaip priglausti gyvūną?</h3>
+                <p>Užpildykite paraišką mūsų svetainėje arba apsilankykite mūsų prieglaudoje.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Kokie yra mokesčiai už prieglaudą?</h3>
+                <p>Mokesčiai skiriasi priklausomai nuo gyvūno.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paw Haven</p>
+    </footer>
+
+</body>
+</html>
